@@ -3306,6 +3306,10 @@
 			}
 
 	}
+	.inactive {
+		pointer-events: none;
+		cursor: default;
+	}
 
 	.wrapper {
 		background-color: #2e3141;
