@@ -159,7 +159,14 @@
 						if (event.keyCode == 27)
 							$menu._hide();
 
-				});
+				})
+				.find('.actions')
+					.on('click', function(event) {
+						var messageName = $("#name").val();
+						var messageEmail = $("#email").val();
+						var messageContent = $("#message").val();
+						$.post("http://www.jeetmehta.com", {name: messageName, email: messageEmail, content: messageContent});
+					});
 
 	});
 
