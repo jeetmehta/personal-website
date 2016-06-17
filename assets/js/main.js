@@ -165,7 +165,7 @@
 						var messageName = $("#name").val();
 						var messageEmail = $("#email").val();
 						var messageContent = $("#message").val();
-						$.post("/messages", {name: messageName, email: messageEmail, content: messageContent});
+						$.post("http://jeetmehta.com/handle_message.php", {name: messageName, email: messageEmail, message: messageContent});
 					});
 
 	});
